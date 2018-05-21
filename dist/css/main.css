@@ -8584,14 +8584,18 @@ fieldset {
 /*********** Modules *************/
 /*********************************/
 /*********************************/
-/********** Typography ***********/
-/*********************************/
-/*********************************/
-/*********** Buttons *************/
-/*********************************/
-/*********************************/
-/******** Class Helpers **********/
-/*********************************/
-/*********************************/
 /*********** Modules *************/
 /*********************************/
+.wr-header .container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
+
+.wr-topintro {
+  height: 100vh;
+  background-image: url(../img/main-top-01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0; }

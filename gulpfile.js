@@ -121,16 +121,16 @@ gulp.task('fonts:build', function() {
 // обработка картинок
 gulp.task('image:build', function () {
     gulp.src(path.src.img) // путь с исходниками картинок
-        .pipe(cache(imagemin([ // сжатие изображений
-		    imagemin.gifsicle({interlaced: true}),
-            jpegrecompress({
-                progressive: true,
-                max: 90,
-                min: 80
-            }),
-            pngquant(),
-            imagemin.svgo({plugins: [{removeViewBox: false}]})
-		])))
+  //       .pipe(cache(imagemin([ // сжатие изображений
+		//     imagemin.gifsicle({interlaced: true}),
+  //           jpegrecompress({
+  //               progressive: true,
+  //               max: 90,
+  //               min: 80
+  //           }),
+  //           pngquant(),
+  //           imagemin.svgo({plugins: [{removeViewBox: false}]})
+		// ])))
         .pipe(gulp.dest(path.dist.img)); // выгрузка готовых файлов
 });
 

@@ -1,26 +1,31 @@
 /*********************************/
-/********** Typography ***********/
-/*********************************/
-
-
-
-
-/*********************************/
-/*********** Buttons *************/
-/*********************************/
-
-
-
-
-
-/*********************************/
-/******** Class Helpers **********/
-/*********************************/
-
-
-
-
-
-/*********************************/
 /*********** Modules *************/
 /*********************************/
+
+//  MENU
+
+.wr-header {
+  .container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .navbar-brand {
+
+  }
+}
+
+
+
+//TOPINTRO
+
+.wr-topintro {
+  height: 100vh;
+  background-image: url(../img/main-top-01.jpg);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: 0 0;
+}
