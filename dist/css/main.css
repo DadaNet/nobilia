@@ -8614,3 +8614,78 @@ fieldset {
 
 .blue {
   background-color: blue; }
+
+.wrapper {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto; }
+
+.container2 {
+  margin: 50px 0; }
+  .container2__row__itemSmall {
+    height: 440px;
+    width: 440px;
+    background-color: #6c757d;
+    padding: 0;
+    margin: 0; }
+  .container2__row__itemBig {
+    height: 440px;
+    width: 923px;
+    padding: 0;
+    background-color: rgba(133, 145, 145, 0.8); }
+    .container2__row__itemBig__types {
+      position: relative;
+      height: 0;
+      top: 138px;
+      left: 39px; }
+      .container2__row__itemBig__types h1 {
+        width: 174px;
+        height: 39px;
+        color: #ffffff;
+        font-family: "Segoe UI";
+        font-size: 30px;
+        font-weight: 400; }
+      .container2__row__itemBig__types p {
+        width: 304px;
+        height: 30px;
+        color: #ffffff;
+        font-family: "Segoe UI";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        margin: 30px 0; }
+      .container2__row__itemBig__types__about {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+        .container2__row__itemBig__types__about p {
+          height: 30px;
+          color: #ffffff;
+          font-family: "Segoe UI";
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 30px;
+          text-transform: uppercase; }
+
+.company {
+  margin-right: 37px;
+  margin-bottom: 40px; }
+
+.ergonomics {
+  margin-right: 37px; }
+
+.itemBottom {
+  position: relative;
+  top: 360px;
+  width: 100%;
+  height: 80px;
+  background-color: #859191;
+  opacity: 0.8; }
+  .itemBottom h1 {
+    height: 39px;
+    color: #ffffff;
+    font-family: "Segoe UI";
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0 30px; }
