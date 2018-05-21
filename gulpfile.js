@@ -34,7 +34,6 @@ var autoprefixerList = [
 	'Android >= 4.4',
 	'Opera >= 30'
 ];
-
 /* пути к исходным файлам (src), к готовым файлам (build), а также к тем, за изменениями которых нужно наблюдать (watch) */
 var path = {
     dist: {
