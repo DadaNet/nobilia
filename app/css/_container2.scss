@@ -13,9 +13,9 @@ $background-item:rgba(133,145,145, 0.8);
     &__itemSmall{
       height: 440px;
       width: 440px;
-      background-color: #6c757d;
+
       padding: 0;
-      margin: 0 ;
+      margin: 0;
     }
     &__itemBig{
       height: 440px;
@@ -67,6 +67,8 @@ $background-item:rgba(133,145,145, 0.8);
 .company{
   margin-right: 37px;
   margin-bottom: 40px;
+  //background-image: url("../img/compamy.png");
+  //background-size: cover;
 }
 .ergonomics{
   margin-right: 37px;
