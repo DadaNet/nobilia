@@ -1,0 +1,80 @@
+// Используй это миксин для всего конфига!
+@mixin font-type($font-family, $font-size, $line-height, $letter-spacing) {
+	font-family: $font-family;
+	font-size: $font-size;
+	line-height: $line-height;
+	letter-spacing: $letter-spacing;
+}
+
+
+/* Определяем шрифты */
+$main-font: 'Segoe UI', sans-serif;
+
+body {
+	&.onload {overflow:hidden;}
+
+	/* устанавливаем оптимальный вертикальный ритм */
+	@include font-type($main-font, 14px, 20px, 0px);
+	
+	/* сглаживание шрифтов в вебките */
+	-webkit-font-smoothing: subpixel-antialiased;
+			font-smoothing: subpixel-antialiased;
+}
+
+/* В дополнение от Bootstrap, <p> (параграфы) получают нижний отступ в половину калькулируемой высоты строки (изначально 10px) */
+p {
+	margin-bottom: 20px; /* для правильного вертикального ритма */
+}
+
+a {
+	text-decoration: none;
+
+	&:hover,
+	&:focus,
+	&:active {
+		text-decoration: none;
+	}
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+form {
+	input,
+	select,
+	textarea {
+		-webkit-appearance: none;
+		text-overflow: ellipsis;
+		outline: none;
+
+		&:focus,
+		&:active {
+			text-overflow: ellipsis;
+		}
+	}
+
+	textarea {
+    	resize: vertical;
+	}
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* выделение текста */
+::-moz-selection {
+    background: red;
+    text-shadow: none;
+}
+
+::selection {
+    background: red;
+    text-shadow: none;
+}
