@@ -1,6 +1,6 @@
 $background-text:#859191;
 $background-item:rgba(133,145,145, 0.8);
-
+$background-icon:#e3e4e4;
 
 .wrapper{
   max-width: 1400px;
@@ -50,6 +50,14 @@ $background-item:rgba(133,145,145, 0.8);
         &__about{
           display: flex;
           flex-direction: row;
+          img {
+            background-color: $background-icon;
+            //opacity: 0.72;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            margin-top: 30px;
+          }
           p{
             height: 30px;
             color: #ffffff;
@@ -58,6 +66,7 @@ $background-item:rgba(133,145,145, 0.8);
             font-weight: 700;
             line-height: 30px;
             text-transform: uppercase;
+            width: 195px;
           }
         }
       }
@@ -89,5 +98,11 @@ $background-item:rgba(133,145,145, 0.8);
     font-size: 30px;
     font-weight: 400;
     margin:0 30px;
+  }
+  img{
+    background-color: $background-icon;
+    //opacity: 0.72;
+    border-radius: 50%;
+    width: 30px;
   }
 }
