@@ -14,20 +14,20 @@ body {
 	&.onload {overflow:hidden;}
 
 	/* устанавливаем оптимальный вертикальный ритм */
-	@include font-type($main-font, 14px, 20px, 0px);
+	@include font-type($main-font, 18px, 30px, 0px);
 	
 	/* сглаживание шрифтов в вебките */
 	-webkit-font-smoothing: subpixel-antialiased;
 			font-smoothing: subpixel-antialiased;
 }
 
-/* В дополнение от Bootstrap, <p> (параграфы) получают нижний отступ в половину калькулируемой высоты строки (изначально 10px) */
-p {
-	margin-bottom: 20px; /* для правильного вертикального ритма */
-}
+
+/*   COLORS   */
+$red: #df0d2f;
 
 a {
 	text-decoration: none;
+	color: $red;
 
 	&:hover,
 	&:focus,
@@ -66,15 +66,4 @@ fieldset {
     border: 0;
     margin: 0;
     padding: 0;
-}
-
-/* выделение текста */
-::-moz-selection {
-    background: red;
-    text-shadow: none;
-}
-
-::selection {
-    background: red;
-    text-shadow: none;
 }

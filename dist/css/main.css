@@ -8530,8 +8530,8 @@ a.text-dark:hover, a.text-dark:focus {
 body {
   /* устанавливаем оптимальный вертикальный ритм */
   font-family: "Segoe UI", sans-serif;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 30px;
   letter-spacing: 0px;
   /* сглаживание шрифтов в вебките */
   -webkit-font-smoothing: subpixel-antialiased;
@@ -8539,13 +8539,10 @@ body {
   body.onload {
     overflow: hidden; }
 
-/* В дополнение от Bootstrap, <p> (параграфы) получают нижний отступ в половину калькулируемой высоты строки (изначально 10px) */
-p {
-  margin-bottom: 20px;
-  /* для правильного вертикального ритма */ }
-
+/*   COLORS   */
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #df0d2f; }
   a:hover, a:focus, a:active {
     text-decoration: none; }
 
@@ -8576,15 +8573,6 @@ fieldset {
   margin: 0;
   padding: 0; }
 
-/* выделение текста */
-::-moz-selection {
-  background: red;
-  text-shadow: none; }
-
-::selection {
-  background: red;
-  text-shadow: none; }
-
 /*********************************/
 /********** Typography ***********/
 /*********************************/
@@ -8609,8 +8597,3 @@ fieldset {
 /*********************************/
 /*********** Modules *************/
 /*********************************/
-.red {
-  background-color: red; }
-
-.blue {
-  background-color: blue; }
