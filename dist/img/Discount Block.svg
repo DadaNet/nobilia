@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="403 402 577 296">
+  <defs>
+    <style>
+      .cls-1, .cls-4 {
+        fill: #f92929;
+      }
+
+      .cls-1 {
+        font-size: 96px;
+        font-family: OpenSans, Open Sans;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-size: 40px;
+      }
+
+      .cls-3 {
+        stroke: #95989a;
+        opacity: 0.8;
+      }
+
+      .cls-4 {
+        font-size: 113px;
+        font-family: SegoeUI-Bold, Segoe UI;
+        font-weight: 700;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+
+      .cls-6 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Discount_Block" data-name="Discount Block" transform="translate(0 -80)">
+    <text id="СКИДКА_на_первые_пять_заказанных_кухонь_в_связи_с_открытием" data-name="СКИДКА 
+на первые пять 
+заказанных кухонь 
+в связи с открытием" class="cls-1" transform="translate(583 585)"><tspan x="0" y="0">СКИДКА</tspan><tspan class="cls-2" y="0"> </tspan><tspan class="cls-2"><tspan x="0" y="71">на первые пять </tspan><tspan x="0" y="126">заказанных кухонь </tspan><tspan x="0" y="181">в связи с открытием</tspan></tspan></text>
+    <g id="Discount_Value" data-name="Discount Value" transform="translate(-189 1118) rotate(-90)">
+      <g id="Rectangle_9" data-name="Rectangle 9" class="cls-3" transform="translate(340 599)">
+        <rect class="cls-5" width="270" height="150"/>
+        <rect class="cls-6" x="0.5" y="0.5" width="269" height="149"/>
+      </g>
+      <text id="_40_" data-name="40%" class="cls-4" transform="translate(475 714)"><tspan x="-113.993" y="0">40%</tspan></text>
+    </g>
+  </g>
+</svg>
