@@ -106,7 +106,7 @@ gulp.task('js:build', function () {
         .pipe(plumber()) // для отслеживания ошибок
         .pipe(rigger()) // импортируем все указанные файлы в main.js
         //.pipe(sourcemaps.init()) //инициализируем sourcemap
-        .pipe(uglify()) // минимизируем js
+        //.pipe(uglify()) // минимизируем js
         //.pipe(sourcemaps.write('./')) //  записываем sourcemap
         .pipe(gulp.dest(path.dist.js)) // положим готовый файл
         .pipe(browserSync.reload({stream: true})); // перезагрузим сервер
