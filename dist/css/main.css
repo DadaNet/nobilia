@@ -8611,10 +8611,8 @@ fieldset {
   background-image: url(../img/main-top-01.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0 0; }
-  .wr-topintro .container {
-    position: relative;
-    height: 100vh; }
+  background-position: 0 0;
+  position: relative; }
   .wr-topintro .topintro {
     position: absolute;
     bottom: 120px;
@@ -8622,56 +8620,32 @@ fieldset {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%); }
     .wr-topintro .topintro__header {
-      font-size: 30px;
+      font-size: 2rem;
       font-weight: bold;
       background-color: #fff;
       padding: 20px 30px;
       text-align: center;
-      width: 768px;
+      max-width: 700px;
       margin-bottom: 1rem; }
     .wr-topintro .topintro__text {
       background-color: #e30613;
       padding: 15px 40px;
-      width: 528px;
+      max-width: 500px;
       text-align: center; }
       .wr-topintro .topintro__text a {
         color: #fff;
-        font-size: 1.25rem;
-        font-weight: bold; }
-    .wr-topintro .topintro__next {
-      position: absolute;
-      bottom: 35px;
-      right: 35px; }
-      .wr-topintro .topintro__next .icon-next-big {
-        display: block;
-        width: 50px;
-        height: 50px;
-        background-color: rgba(255, 255, 255, 0.85);
-        border-radius: 25px;
-        border: 2px solid #95989a;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 30px;
-        background-image: url(/img/icons/icon-right-big.png); }
+        font-size: 1.25rem; }
     .wr-topintro .topintro__links {
       position: absolute;
-      top: 255px;
-      right: 35px; }
+      top: 0;
+      right: 0; }
       .wr-topintro .topintro__links a {
-        display: block;
         width: 50px;
         height: 50px;
         margin-bottom: 23px;
         background-color: rgba(255, 255, 255, 0.85);
         border-radius: 25px;
-        border: 2px solid #95989a;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 30px; }
-        .wr-topintro .topintro__links a.icon-pin {
-          background-image: url(/img/icons/icon-pin.png); }
-        .wr-topintro .topintro__links a.icon-plan {
-          background-image: url(/img/icons/icon-planl-kitchen.png); }
+        border: 2px solid #95989a; }
 
 .wrapper {
   max-width: 1400px;
@@ -8683,6 +8657,7 @@ fieldset {
   .container2__row__itemSmall {
     height: 440px;
     width: 440px;
+    background-color: #6c757d;
     padding: 0;
     margin: 0; }
   .container2__row__itemBig {
@@ -8716,12 +8691,6 @@ fieldset {
         display: flex;
         -ms-flex-direction: row;
             flex-direction: row; }
-        .container2__row__itemBig__types__about img {
-          background-color: #e3e4e4;
-          border-radius: 50%;
-          width: 30px;
-          height: 30px;
-          margin-top: 30px; }
         .container2__row__itemBig__types__about p {
           height: 30px;
           color: #ffffff;
@@ -8729,8 +8698,7 @@ fieldset {
           font-size: 18px;
           font-weight: 700;
           line-height: 30px;
-          text-transform: uppercase;
-          width: 195px; }
+          text-transform: uppercase; }
 
 .company {
   margin-right: 37px;
@@ -8753,40 +8721,3 @@ fieldset {
     font-size: 30px;
     font-weight: 400;
     margin: 0 30px; }
-  .itemBottom img {
-    background-color: #e3e4e4;
-    border-radius: 50%;
-    width: 30px; }
-
-.free-project {
-  display: block;
-  border: 1px solid rgba(149, 152, 154, 0.8);
-  opacity: 0.8;
-  width: 440px;
-  height: 440px; }
-  .free-project h2 {
-    margin: 58px 15px 52px 19px; }
-  .free-project input {
-    max-width: 395px;
-    width: 100%;
-    height: 45px;
-    margin: 0 25px 15px;
-    padding: 10px 12px;
-    border: 1px solid rgba(149, 152, 154, 0.8);
-    color: #859191;
-    font-family: "Segoe UI";
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 30px; }
-  .free-project button {
-    max-width: 416px;
-    width: 100%;
-    height: 60px;
-    border: 4px solid #df0d2f;
-    margin: 60px 12px 66px;
-    background-color: transparent;
-    color: #4e4e4e;
-    font-family: "Segoe UI";
-    font-size: 18px;
-    font-weight: 700;
-    text-transform: uppercase; }
