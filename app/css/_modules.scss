@@ -146,3 +146,71 @@
     }
   }
 }
+
+//  EVENTS
+
+.wr-events {
+  text-align: center;
+
+  h2 {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    margin-top: 92px;
+    margin-bottom: 60px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.21px;
+  }
+  p{
+    margin: 0 110px 70px;
+  }
+}
+
+
+
+//  CONTACT FORM
+
+.wr-cont-form {
+  .cont-form {
+    border: 1px solid $gray;
+    padding: 65px 72px 50px;
+
+    &__intro {
+      margin-bottom: 65px;
+      h2 {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 45px;
+      }
+    }
+
+    &__form {
+      .form-control {
+        margin-bottom: 15px;
+      }
+      legend {
+        font-size: 20px;
+        font-weight: 700;
+      }
+      .form-check {
+        margin-right: 100px;
+        margin-bottom: 15px;
+        display: inline-flex;
+        align-items: center;
+      }
+      fieldset {
+        margin-bottom: 0;
+      }
+      .accept {
+        margin-top: 40px;
+        .form-check {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
