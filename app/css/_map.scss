@@ -1,0 +1,41 @@
+#map {
+  width: 100vw;
+  height: 450px;
+}
+/* Оформление меню (начало)*/
+.menu {
+  list-style: none;
+  padding: 5px;
+  margin: 0;
+  li{
+    a{
+      color: transparent;
+    }
+  }
+}
+.submenu {
+  position: relative;
+  top:-430px;
+  left: 12vw;
+  list-style: none;
+  padding: 50px 60px;
+  font-family: "Segoe UI";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  background-color: $background-item;
+  display: block;
+  width: 383px;
+  height: 380px;
+  li{
+    a{
+      color: $white-color;
+      .title{
+        margin-bottom: 7px;
+      }
+      .text{
+        margin-bottom: 32px;
+      }
+    }
+  }
+}
