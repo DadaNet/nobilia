@@ -1,26 +1,5 @@
-// Используй это миксин для всего конфига!
-@mixin font-type($font-family, $font-size, $line-height, $letter-spacing) {
-	font-family: $font-family;
-	font-size: $font-size;
-	line-height: $line-height;
-	letter-spacing: $letter-spacing;
-}
-
-
-/* Определяем шрифты */
-$main-font: 'Segoe UI', sans-serif;
-
-body {
-	&.onload {overflow:hidden;}
-
-	/* устанавливаем оптимальный вертикальный ритм */
-	@include font-type($main-font, 18px, 30px, 0px);
-	
-	/* сглаживание шрифтов в вебките */
-	-webkit-font-smoothing: subpixel-antialiased;
-			font-smoothing: subpixel-antialiased;
-}
-
+$bg-icons: rgba(255,255,255,0.85);
+$gray: #95989a;
 
 a {
 	text-decoration: none;

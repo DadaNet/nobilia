@@ -1,5 +1,22 @@
-$red: #df0d2f;
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        //xl: 1140px
+        xl: 1400px
+) !default;
+
+$font-size-base: 1rem;
+//$line-height-base: 1.66666;
+
+$red: #e30613;
 $primary: $red;
+
+
+$navbar-brand-font-size: $font-size-base;
+$navbar-padding-y: 15px;
+$navbar-padding-x: 30px;
+
 
 
 // Подключение нужных SCSS исходников Bootstrap 4
