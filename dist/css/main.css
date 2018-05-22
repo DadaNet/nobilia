@@ -8648,8 +8648,7 @@ fieldset {
           border-radius: 50%;
           width: 30px;
           height: 30px;
-          margin-top: 30px;
-          cursor: pointer; }
+          margin-top: 30px; }
         .container2__row__itemBig__types__about p {
           height: 30px;
           color: #ffffff;
@@ -8658,8 +8657,7 @@ fieldset {
           font-weight: 700;
           line-height: 30px;
           text-transform: uppercase;
-          width: 195px;
-          cursor: pointer; }
+          width: 195px; }
 
 .company {
   margin-right: 37px;
@@ -8681,13 +8679,11 @@ fieldset {
     font-family: "Segoe UI";
     font-size: 30px;
     font-weight: 400;
-    margin: 0 30px;
-    cursor: pointer; }
+    margin: 0 30px; }
   .itemBottom img {
     background-color: #e3e4e4;
     border-radius: 50%;
-    width: 30px;
-    cursor: pointer; }
+    width: 30px; }
 
 .free-project {
   display: block;
@@ -8698,7 +8694,7 @@ fieldset {
   .free-project h2 {
     margin: 58px 15px 52px 19px; }
   .free-project input {
-    max-width: 390px;
+    max-width: 395px;
     width: 100%;
     height: 45px;
     margin: 0 25px 15px;
@@ -8720,5 +8716,4 @@ fieldset {
     font-family: "Segoe UI";
     font-size: 18px;
     font-weight: 700;
-    text-transform: uppercase;
-    cursor: pointer; }
+    text-transform: uppercase; }
