@@ -65,7 +65,10 @@
   -webkit-background-size: cover;
   background-size: cover;
   background-position: 0 0;
-  position: relative;
+  .container {
+    position: relative;
+    height: 100vh;
+  }
 
   .topintro {
     position: absolute;
@@ -75,38 +78,70 @@
     transform: translateX(-50%);
 
     &__header {
-      font-size: 2rem;
+      font-size: 30px;
       font-weight: bold;
       background-color: #fff;
       padding: 20px 30px;
       text-align: center;
-      max-width: 700px;
+      width: 768px;
       margin-bottom: 1rem;
 
     }
     &__text{
       background-color: $red;
       padding: 15px 40px;
-      max-width: 500px;
+      width: 528px;
       text-align: center;
       a {
         color: #fff;
         font-size: 1.25rem;
+        font-weight: bold;
       }
 
     }
+    &__next {
+      position: absolute;
+      bottom: 35px;
+      right: 35px;
+
+      .icon-next-big {
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-color: $bg-icons;
+        border-radius: 25px;
+        border: 2px solid $gray;
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-background-size: 30px;
+        background-size: 30px;
+        background-image: url(/img/icons/icon-right-big.png);
+      }
+    }
     &__links {
       position: absolute;
-      top: 0;
-      right: 0;
+      top: 255px;
+      right: 35px;
       
       a {
+        display: block;
         width: 50px;
         height: 50px;
         margin-bottom: 23px;
         background-color: $bg-icons;
         border-radius: 25px;
         border: 2px solid $gray;
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-background-size: 30px;
+        background-size: 30px;
+
+        &.icon-pin {
+          background-image: url(/img/icons/icon-pin.png);
+        }
+        &.icon-plan {
+          background-image: url(/img/icons/icon-planl-kitchen.png);
+        }
       }
     }
   }
