@@ -7,17 +7,20 @@
 
 .menu {
   list-style: none;
-  padding: 5px;
+  padding: 0;
   margin: 0;
   li{
+    height: 0;
     a{
       color: transparent;
+      font-size: 0;
     }
   }
 }
 .submenu {
-  position: relative;
-  top:-430px;
+  position: absolute;
+  //bottom:430px;
+  margin-top: -445px;
   left: 12vw;
   list-style: none;
   padding: 50px 60px;
@@ -31,6 +34,7 @@
   height: 380px;
   li{
     a{
+      font-size: 18px;
       color: $white-color;
       .map__title{
         margin-bottom: 7px;
