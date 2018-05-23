@@ -8681,7 +8681,7 @@ h3 {
         background-repeat: no-repeat;
         background-position: center;
         background-size: 30px;
-        background-image: url(/img/icons/icon-right-big.png); }
+        background-image: url(../img/icons/icon-right-big.png); }
     .wr-topintro .topintro__links {
       position: absolute;
       top: 255px;
@@ -8698,9 +8698,9 @@ h3 {
         background-position: center;
         background-size: 30px; }
         .wr-topintro .topintro__links a.icon-pin {
-          background-image: url(/img/icons/icon-pin.png); }
+          background-image: url(../img/icons/icon-pin.png); }
         .wr-topintro .topintro__links a.icon-plan {
-          background-image: url(/img/icons/icon-planl-kitchen.png); }
+          background-image: url(../img/icons/icon-planl-kitchen.png); }
 
 .wr-events {
   text-align: center; }
