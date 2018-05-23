@@ -1,3 +1,5 @@
+$gray: #95989a;
+$gray-text: #4e4e4e;
 $container-max-widths: (
         sm: 540px,
         md: 720px,
@@ -5,6 +7,8 @@ $container-max-widths: (
         //xl: 1140px
         xl: 1400px
 ) !default;
+
+$body-color: $gray-text;
 
 $font-size-base: 1rem;
 //$line-height-base: 1.66666;
@@ -16,6 +20,21 @@ $primary: $red;
 $navbar-brand-font-size: $font-size-base;
 $navbar-padding-y: 15px;
 $navbar-padding-x: 30px;
+
+
+
+$btn-border-radius: 0;
+$btn-padding-y: 18px;
+$btn-padding-x: 70px;
+$btn-border-width: 4px;
+$btn-font-weight: bold;
+
+
+$input-border-radius: 0;
+$input-padding-y: 0.75rem;
+$input-padding-x: 1rem;
+$input-placeholder-color: $gray;
+$input-height: 3rem;
 
 
 
