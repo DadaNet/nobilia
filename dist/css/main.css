@@ -8755,7 +8755,10 @@ fieldset {
       width: 100%;
       padding-top: 138px;
       padding-left: 39px;
-      background-color: rgba(133, 145, 145, 0.8); }
+      background-color: rgba(133, 145, 145, 0.8);
+      transition: background-color 1s; }
+      .container2__row__itemBig__types:hover {
+        background-color: transparent; }
       .container2__row__itemBig__types h1 {
         width: 174px;
         height: 39px;
@@ -8772,28 +8775,6 @@ fieldset {
         font-weight: 400;
         line-height: 30px;
         margin: 30px 0; }
-      .container2__row__itemBig__types__about {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-direction: row;
-            flex-direction: row; }
-        .container2__row__itemBig__types__about img {
-          background-color: #e3e4e4;
-          border-radius: 50%;
-          width: 30px;
-          height: 30px;
-          margin-top: 30px;
-          cursor: pointer; }
-        .container2__row__itemBig__types__about p {
-          height: 30px;
-          color: #ffffff;
-          font-family: "Segoe UI";
-          font-size: 18px;
-          font-weight: 700;
-          line-height: 30px;
-          text-transform: uppercase;
-          width: 195px;
-          cursor: pointer; }
 
 .company {
   margin-right: 37px;
@@ -8812,6 +8793,33 @@ fieldset {
   background-size: cover;
   background-color: rgba(133, 145, 145, 0.8); }
 
+.know-more {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row; }
+  .know-more a {
+    display: -ms-flexbox;
+    display: flex; }
+    .know-more a p {
+      height: 30px;
+      color: #ffffff;
+      font-family: "Segoe UI";
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 30px;
+      text-transform: uppercase;
+      width: 195px;
+      cursor: pointer;
+      margin: 0; }
+    .know-more a img {
+      background-color: #e3e4e4;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      margin: 0;
+      cursor: pointer; }
+
 .itemBottom {
   position: relative;
   top: 360px;
@@ -8819,19 +8827,25 @@ fieldset {
   height: 80px;
   background-color: #859191;
   opacity: 0.8; }
-  .itemBottom h1 {
-    height: 39px;
-    color: #ffffff;
-    font-family: "Segoe UI";
-    font-size: 30px;
-    font-weight: 400;
-    margin: 0 30px;
-    cursor: pointer; }
-  .itemBottom img {
-    background-color: #e3e4e4;
-    border-radius: 50%;
-    width: 30px;
-    cursor: pointer; }
+  .itemBottom a {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center; }
+    .itemBottom a h1 {
+      height: 39px;
+      color: #ffffff;
+      font-family: "Segoe UI";
+      font-size: 30px;
+      font-weight: 400;
+      margin: 0 30px;
+      cursor: pointer; }
+    .itemBottom a img {
+      background-color: #e3e4e4;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      cursor: pointer; }
 
 .itemBottomBG {
   top: -80px; }
@@ -8863,9 +8877,76 @@ fieldset {
     border: 4px solid #df0d2f;
     margin: 60px 12px 66px;
     background-color: transparent;
-    color: #4e4e4e;
+    color: #e30613;
     font-family: "Segoe UI";
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
     cursor: pointer; }
+
+.third-page__header {
+  width: 100%;
+  min-height: 420px;
+  height: 100%;
+  background-color: #859191;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  padding-top: 50px; }
+  .third-page__header__title {
+    color: #ffffff;
+    font-family: "Segoe UI";
+    font-size: 80px;
+    font-weight: 600; }
+    .third-page__header__title::before {
+      content: "";
+      width: 180px;
+      height: 8px;
+      background-color: #ffffff;
+      display: block;
+      margin: 0 auto; }
+  .third-page__header__text {
+    display: block;
+    max-width: 988px;
+    width: 100%;
+    min-height: 83px;
+    height: 100%;
+    color: #ffffff;
+    font-family: "Segoe UI";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    margin: 15px 0 45px; }
+  .third-page__header__link {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center; }
+
+.third-blocks {
+  margin-top: 54px; }
+  .third-blocks__row__item {
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #859191;
+    margin: 0 10px; }
+    .third-blocks__row__item__info {
+      padding: 0 25px;
+      color: #ffffff;
+      font-family: "Segoe UI"; }
+      .third-blocks__row__item__info__title {
+        width: 100%;
+        font-size: 27px;
+        font-weight: 400;
+        margin: 25px 0; }
+      .third-blocks__row__item__info__text {
+        padding-right: 20px;
+        opacity: 0.8;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        margin-bottom: 25px; }
