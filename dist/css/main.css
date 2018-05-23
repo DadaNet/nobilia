@@ -9004,14 +9004,17 @@ fieldset {
 /* Оформление меню (начало)*/
 .menu {
   list-style: none;
-  padding: 5px;
+  padding: 0;
   margin: 0; }
-  .menu li a {
-    color: transparent; }
+  .menu li {
+    height: 0; }
+    .menu li a {
+      color: transparent;
+      font-size: 0; }
 
 .submenu {
-  position: relative;
-  top: -430px;
+  position: absolute;
+  margin-top: -445px;
   left: 12vw;
   list-style: none;
   padding: 50px 60px;
@@ -9024,6 +9027,7 @@ fieldset {
   width: 383px;
   height: 380px; }
   .submenu li a {
+    font-size: 18px;
     color: #ffffff; }
     .submenu li a .map__title {
       margin-bottom: 7px; }
