@@ -65,6 +65,7 @@
   -webkit-background-size: cover;
   background-size: cover;
   background-position: 0 0;
+
   .container {
     position: relative;
     height: 100vh;
@@ -152,21 +153,15 @@
 .wr-events {
   text-align: center;
 
-  h2 {
-    font-size: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-
   h3 {
-    margin-top: 92px;
-    margin-bottom: 60px;
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 0.21px;
+    margin-top: 80px;
+    margin-bottom: 40px;
   }
   p{
     margin: 0 110px 70px;
+  }
+  .events-text {
+    color: $gray;
   }
 }
 
@@ -175,42 +170,75 @@
 //  CONTACT FORM
 
 .wr-cont-form {
+  margin-bottom: 85px;
+
   .cont-form {
     border: 1px solid $gray;
     padding: 65px 72px 50px;
 
     &__intro {
       margin-bottom: 65px;
-      h2 {
-        font-size: 30px;
-        font-weight: 700;
-        line-height: 45px;
-      }
     }
 
     &__form {
       .form-control {
         margin-bottom: 15px;
       }
-      legend {
-        font-size: 20px;
-        font-weight: 700;
-      }
-      .form-check {
-        margin-right: 100px;
-        margin-bottom: 15px;
-        display: inline-flex;
-        align-items: center;
-      }
       fieldset {
-        margin-bottom: 0;
+        padding: 10px 0;
+        margin-bottom: 15px;
+        margin-left: 20px;
+
+        .legend {
+          width: 222px;
+          margin-right: 28px;
+          font-size: 20px;
+          font-weight: 700;
+          margin-bottom: 0;
+        }
+        .form-check {
+          margin-right: 35px;
+          display: inline-flex;
+          align-items: center;
+        }
       }
       .accept {
-        margin-top: 40px;
+        margin-top: 35px;
         .form-check {
           margin-right: 0;
+          margin-bottom: 24px;
         }
       }
     }
+  }
+}
+
+
+
+//  SLIDER
+
+.wr-slider {
+  .swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 800px;
+    height: 400px;
+  }
+  .gallery-thumbs {
+    height: 195px;
+    box-sizing: border-box;
+    padding: 25px 0;
+  }
+  .gallery-thumbs .swiper-slide {
+    height: 100%;
+    opacity: 0.4;
+  }
+  .gallery-thumbs .swiper-slide-active {
+    opacity: 1;
   }
 }

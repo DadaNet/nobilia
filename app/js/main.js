@@ -8,4 +8,7 @@
 //= ../../node_modules/bootstrap/dist/js/bootstrap.js
 
 // Импортируем другие js-файлы
+//= swiper.min.js
+
+// Импортируем другие js-файлы
 //= my.js

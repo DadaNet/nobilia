@@ -100,5 +100,39 @@ $(document).ready(function() {
         // Выставляем масштаб карты чтобы были видны все группы.
         myMap.setBounds(myMap.geoObjects.getBounds());
     }
+
+
+
+    var galleryTop = new Swiper('.gallery-top', {
+        effect: 'coverflow',
+        //grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 2,
+        loop: true,
+        loopedSlides: 5, //looped slides should be the same
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        coverflowEffect: {
+            rotate: 90,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows : true,
+        },
+    });
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween: 10,
+        centeredSlides: true,
+        slidesPerView: 5,
+        touchRatio: 0.2,
+        loop: true,
+        loopedSlides: 5, //looped slides should be the same
+        slideToClickedSlide: true,
+    });
+
+    galleryTop.controller.control = galleryThumbs;
+    galleryThumbs.controller.control = galleryTop;
 	
 });

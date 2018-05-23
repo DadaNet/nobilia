@@ -57,6 +57,19 @@ fieldset {
   display: block;
   height: 8px;
   width: 180px;
-  background-color: $gray-text;
+  background-color: $gray;
   margin: 0 auto 30px;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
