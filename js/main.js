@@ -17483,6 +17483,9 @@ return Popper;
 //# sourceMappingURL=swiper.min.js.map
 
 // Импортируем другие js-файлы
+!function(t){"use strict";var s={width:0,height:0,selector:".item-point",styleSelector:"circle",animationSelector:"",animationPopoverIn:"",animationPopoverOut:"",onInit:null,getSelectorElement:null,getValueRemove:null},e={settings:null,init:function(i,n){this.settings=t.extend(s,n),this.event(i),e.layout(i),t(window).on("load",function(){e.layout(i)}),t(i).find(".target").on("load",function(){e.layout(i)}),t(window).on("resize",function(){e.layout(i)})},event:function(s){this.settings.styleSelector&&t(this.settings.selector).addClass(this.settings.styleSelector),this.settings.animationSelector&&("marker"==this.settings.animationSelector?(t(this.settings.selector).addClass(this.settings.animationSelector),t(this.settings.selector).append('<div class="pin"></div>'),t(this.settings.selector).append('<div class="pulse"></div>')):t(this.settings.selector).addClass(this.settings.animationSelector)),t.isFunction(this.settings.onInit)&&this.settings.onInit(),t(s).find(".content").addClass("animated"),t(this.settings.selector).wrapAll("<div class='wrap-selector' />"),t(this.settings.selector).each(function(){t(".toggle",this).on("click",function(i){i.preventDefault(),t(this).closest(e.settings.selector).toggleClass("active");var n=t(this).closest(e.settings.selector).data("popover"),o=t(n);t(this).closest(e.settings.selector).hasClass("active")&&!t(this).closest(e.settings.selector).hasClass("disabled")?(t.isFunction(e.settings.getSelectorElement)&&e.settings.getSelectorElement(t(this).closest(e.settings.selector)),o.fadeIn(),e.layout(s),o.removeClass(e.settings.animationPopoverOut),o.addClass(e.settings.animationPopoverIn)):(t.isFunction(e.settings.getValueRemove)&&e.settings.getValueRemove(t(this).closest(e.settings.selector)),o.removeClass(e.settings.animationPopoverIn),o.addClass(e.settings.animationPopoverOut),o.delay(500).fadeOut())});var i=t(this).data("popover"),n=t(i);n.find(".exit").on("click",function(s){s.preventDefault(),t('[data-popover="'+i+'"]').removeClass("active"),n.removeClass(e.settings.animationPopoverIn),n.addClass(e.settings.animationPopoverOut),n.delay(500).fadeOut()})})},layout:function(s){var e=new Image;e.src=s.find(".target").attr("src");var i=e.naturalWidth,n=e.naturalHeight,o=t(s).width(),a=o/i*100,l=n*a/100;t(s).css("height",l),t(window).width()<i?t(s).stop().css("width","100%"):t(s).stop().css("width",i),t(this.settings.selector).each(function(){if(t(window).width()<i)var s=t(this).data("top")*a/100,e=t(this).data("left")*a/100;else var s=t(this).data("top"),e=t(this).data("left");t(this).css("top",s+"px"),t(this).css("left",e+"px");var n=t(this).data("popover"),o=t(n).find(".head").outerHeight()+t(n).find(".body").outerHeight()+t(n).find(".footer").outerHeight();if(t(n).css("left",e+"px"),t(n).css("height",o+"px"),t(n).hasClass("bottom")){var l=t(n).outerHeight(),r=s-l;t(n).css("top",r+"px")}else if(t(n).hasClass("center")){var l=.5*t(n).outerHeight(),r=s-l;t(n).css("top",r+"px")}else t(n).css("top",s+"px");if(t(".toggle",this).css("width",t(this).outerWidth()),t(".toggle",this).css("height",t(this).outerHeight()),t(this).find(".pin")){var c=t(".pin",this).outerWidth(),h=t(".pin",this).outerHeight();t(".toggle",this).css("width",c),t(".toggle",this).css("height",h)}})}};t.fn.scalize=function(t){return e.init(this,t)}}(jQuery);
+
+// Импортируем другие js-файлы
 $(document).ready(function() {
 
     // Группы объектов
@@ -17587,7 +17590,7 @@ $(document).ready(function() {
     }
 
 
-
+// GALLERY 3D
     var galleryTop = new Swiper('.gallery-top', {
         effect: 'coverflow',
         //grabCursor: true,
@@ -17619,5 +17622,76 @@ $(document).ready(function() {
 
     galleryTop.controller.control = galleryThumbs;
     galleryThumbs.controller.control = galleryTop;
+
+
+
+    // SELECT STYLISE
+
+    $('select').each(function(){
+        var $this = $(this), numberOfOptions = $(this).children('option').length;
+
+        $this.addClass('select-hidden');
+        $this.wrap('<div class="select"></div>');
+        $this.after('<div class="select-styled"></div>');
+
+        var $styledSelect = $this.next('div.select-styled');
+        $styledSelect.text($this.children('option').eq(0).text());
+
+        var $list = $('<ul />', {
+            'class': 'select-options'
+        }).insertAfter($styledSelect);
+
+        for (var i = 0; i < numberOfOptions; i++) {
+            $('<li />', {
+                text: $this.children('option').eq(i).text(),
+                rel: $this.children('option').eq(i).val()
+            }).appendTo($list);
+        }
+
+        var $listItems = $list.children('li');
+
+        $styledSelect.click(function(e) {
+            e.stopPropagation();
+            $('div.select-styled.active').not(this).each(function(){
+                $(this).removeClass('active').next('ul.select-options').hide();
+            });
+            $(this).toggleClass('active').next('ul.select-options').toggle();
+        });
+
+        $listItems.click(function(e) {
+            e.stopPropagation();
+            $styledSelect.text($(this).text()).removeClass('active');
+            $this.val($(this).attr('rel'));
+            $list.hide();
+            //console.log($this.val());
+        });
+
+        $(document).click(function() {
+            $styledSelect.removeClass('active');
+            $list.hide();
+        });
+
+    });
+
+
+    //  SCALIZE
+
+    $('.scalize').scalize({
+        // width/height
+        width: 0,
+        height: 0,
+
+        // selector of markers
+        selector: '.item-point',
+
+        // circle, square, content
+        styleSelector: 'circle',
+
+        // pulse, pulse2, marker
+        animationSelector: 'pulse2',
+
+        animationPopoverIn: 'flipInY',
+        animationPopoverOut: 'flipOutY'
+    });
 	
 });
