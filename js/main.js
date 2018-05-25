@@ -17496,13 +17496,13 @@ $(document).ready(function() {
             items: [
                 {
                     center: [47.230731, 39.724589],
-                    name: "<p class='map__title'>График работы:</p>" +
+                    name: "<h5 class='map__title'>График работы:</h5>" +
                     "<p class='map__text'>пн-сб: с 10:00 до 19:00,<br>" +
                     "вс: с 10:00 до 17:00</p>" +
-                    "<p class='map__title'>Адрес:</p>" +
+                    "<h5 class='map__title'>Адрес:</h5>" +
                     "<p class='map__text'>г.Ростов-на-Дону,<br>" +
                     "ул.Красноармейска д.103/123" +
-                    "<p>Телефон:  +7 (863) 299-44-53</p>"
+                    "<p class='map__text'>Телефон:  <a class='map__tel' href='tel:+7(863) 299-44-53'>  +7 (863) 299-44-53</p>"
                 }
             ]}
     ];
@@ -17519,26 +17519,25 @@ $(document).ready(function() {
             }, {
                 searchControlProvider: 'yandex#search'
             }),
+
             // Контейнер для меню.
-            menu = $('<ul class="menu"/>');
+            menu = $('<div class="map__menu"/>');
 
         for (var i = 0, l = groups.length; i < l; i++) {
             createMenuGroup(groups[i]);
         }
 
         function createMenuGroup (group) {
+
             // Пункт меню.
-            var menuItem = $('<li><a href="#">' + group.name + '</a></li>'),
+            var submenu = $('<div class="map__submenu"/>'),
                 // Коллекция для геообъектов группы.
-                collection = new ymaps.GeoObjectCollection(null, { preset: group.style }),
-                // Контейнер для подменю.
-                submenu = $('<ul class="submenu"/>');
+                collection = new ymaps.GeoObjectCollection(null, {preset: group.style});
 
             // Добавляем коллекцию на карту.
             myMap.geoObjects.add(collection);
             // Добавляем подменю.
-            menuItem
-                .append(submenu)
+            submenu
                 // Добавляем пункт в меню.
                 .appendTo(menu)
                 // По клику удаляем/добавляем коллекцию на карту и скрываем/отображаем подменю.
@@ -17559,7 +17558,7 @@ $(document).ready(function() {
 
         function createSubMenu (item, collection, submenu) {
             // Пункт подменю.
-            var submenuItem = $('<li><a href="#">' + item.name + '</a></li>'),
+            var submenuItem = $(item.name),
                 // Создаем метку.
                 placemark = new ymaps.Placemark(item.center, { balloonContent: item.name });
 
@@ -17580,8 +17579,10 @@ $(document).ready(function() {
                 });
         }
 
-        // Добавляем меню в тэг BODY.
-        menu.appendTo($('body'));
+        // Добавляем меню в тэг WR-MAP.
+        menu.appendTo($('.wr-map'));
+
+        myMap.behaviors.disable(['scrollZoom']);
         myMap.setBounds({
             checkZoomRange: true,
         });
